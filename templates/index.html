@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style1.css') }}">
+  <title>Login</title>
+</head>
+
+<div class="user">
+    <header class="user__header">
+    <h1 class="user__title">Login</h1>
+    </header>
+  <body>
+
+    <form action="{{url_for('pickfighter')}}" method="POST" class="form">
+      <div class="form__group">
+      <input type="text" id="username" name="username" placeholder="Username" class="form__input" required autofocus>
+      </div>
+      <div class="form__group">
+      <input type="password" id="password" name="password" placeholder="Password" class="form__input" required>
+      </div>
+      <div class="form__group">
+      <input type="text" id="frname" name="frname" placeholder="Friend's username" class="form__input" required>
+      </div>
+      <div class="form__group">
+      <button class="btn" style="cursor:pointer;" value="submit">Login</button>
+    </div>
+    </form>
+
+      <form action="{{url_for('register')}}" method="POST" class="form" >
+<div class="form__group">
+        <button value="submit" style="border:none;background:none;cursor:pointer;">Register?</button>
+</div>
+      </form>
+
+  </body>
+
+</div>
+
+</html>
