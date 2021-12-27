@@ -1,6 +1,7 @@
 # network-project
 pip requirements:<br>
 flask_restful<br>
+flask<br>
 pickle<br>
 json<br>
 mysql.connector<br>
