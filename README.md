@@ -1,4 +1,4 @@
-# network-project
+# Network Project
 pip requirements:<br>
 flask_restful<br>
 flask<br>
